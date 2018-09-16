@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Blackhaus';
+  src: url('../assets/blackhaus_regular.otf') format('opentype');
+}
+
+h1,
+h3 {
+  font-family: 'Blackhaus';
+  color: white;
+  -webkit-text-fill-color: black;
+  /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2rem;
+  -webkit-text-stroke-color: white;
+}
+
+h2,
+h3,
+body {
+  font-family: 'Blackhaus'
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+}
+html {
+  font-size: 2vw;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.intro {
+  transition: all 1s ease-out;
+  margin: 0.5rem auto;
+  width: 80%;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 12rem;
+  font-weight: 200;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 2rem;
+  margin-top: 3.5rem;
+  transition: all 5s ease-out;
+}
+
+.location {
+  color: grey;
+  font-size: 1rem;
+}
+
+.date {
+  font-size: 3rem;
+}
+
+.mail-list {
+  font-size: 0.8rem;
+  color: grey;
+  transition: all 0.6s ease;
+  border: 1px solid grey;
+  padding: 0.4rem;
+  text-align: center;
+  margin: 1rem auto 0 auto;
+  width: 18%
+}
+
+.mail-list:hover {
+  border: 1px solid white;
+  color: white;
+  cursor: pointer;
+}
+
+.mail-screen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.mail-screen input {
+  width: 13rem;
+  font-size: 2rem;
+  color: white;
+  font-family: 'Blackhaus';
+  border-bottom: 3px solid grey;
+  transition: all 0.6s ease;
+}
+
+.mail-screen input:focus {
+  border-bottom: 3px solid white;
+}
+
+#mc-embedded-subscribe {
+  margin-top: 30vh;
+  align-self: flex-end;
+  border: none;
+  padding: 0.6rem;
+  color: grey;
+}
+
+#mc-embedded-subscribe:hover {
+  color: white;
+}
+
+.thank-screen {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.thank-screen span {
+  margin-top: 10vh;
+  font-size: 2rem;
+}
+
+.thank-screen p {
+  font-size: 1rem;
+  margin-top: 10vh;
+}
+
+.thank-screen h1 {
+  font-size: 8rem;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (max-width:320px) {
+
+  html {
+    font-size: 3vw;
+  }
+  
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .location {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    justify-self: flex-start;
+  }
+
+  .title {
+    font-size: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .date {
+    font-size: 6rem;
+  }
+
+  .mail-list {
+    width: 80%;
+    margin-bottom: 4rem; 
+    font-size: 2rem;
+    color: white;
+    border-color: white;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  #mc-embedded-subscribe {
+    font-size: 4rem;
+  }
+
+  .mail-screen input {
+    font-size: 4rem;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .mc-field-group,
+  .clear {
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 9rem;
+    -webkit-text-stroke-width: 0.1rem;
+  }
+
+  .thank-screen span {
+    font-size: 4rem;
+  }
+
+  .thank-screen p {
+    font-size: 3rem;
+    width: 90%;
+  }
+}
